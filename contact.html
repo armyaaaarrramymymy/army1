@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+         body {
+      margin: 0;
+      
+      display: flex;
+      justify-content: center; /* จัดแนวนอน */
+      align-items: center;     /* จัดแนวตั้ง */
+      background-color: #FFDCDC;
+    }
+
+    .center-box {
+      border: 2px solid #333;      /* เส้นกรอบ */
+      padding: 30px;
+      background-color: #FFF2EB;
+      border-radius: 10px;         /* มุมโค้ง */
+      box-shadow: 0 0 10px rgba(0,0,0,0.1); /* เงา */
+      width: 300px;
+      text-align: center;
+      font-family: sans-serif;
+    }
+     a,h3{
+        color: black;
+        float: left;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    b{
+      float: left;
+    }
+    button{
+      float: right;
+    }
+    form label {
+  
+  margin-top: 10px;
+}
+.center-box form {
+  text-align: left;
+}
+
+form input {
+ 
+  width: 175px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  flex: 1;
+ 
+}
+input.no-style {
+  all: unset;
+  padding: 5px 10px;
+  background-color: #ddd;
+  border: 1px solid #888;
+  width: 70px;
+  height: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: sans-serif;
+    margin-top: 20px;
+  }
+  .contact-links a {
+    text-decoration: none;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.2s;
+  }
+  .contact-links a:hover {
+    background-color: #FFF2EB;
+  }
+  .contact-links img {
+    width: 20px;
+    height: 20px;
+  }
+   form input:hover{
+    transition: 0.2s;
+    background-color: #FFE8CD;
+   }
+    </style>
+<body>
+   
+    <div class="center-box">
+ <h1>ติดต่อเรา และส่งคำเรียกร้อง</h1>
+     <p></p>
+     <hr>
+    <h2>เมนู</h2>
+   <a href="index.html">หน้าแรก</a>
+   <br>
+   <br>
+   <a href="bunny1.html ">ร้านกระตุ่ยพันธุ์ไทย</a>
+   <br>
+<br>
+   <a href="bunny2.html">ร้านกระตุ่ยพันธุ์</a>
+   <br>
+   <hr>
+   <h2>ส่งคำเรียกร้อง</h2>
+   <form action="" >
+    <fieldset style="float: left;">
+    <legend >support</legend>
+     <label for="username">username :</label>
+     <input type="text" id="username" name="username" placeholder="enter your username">
+     <br>
+     
+     <label for="email">email :</label>
+     <input type="email" id="email" name="email" placeholder="enter your email">
+     <br>
+     <label for="choice">ห้วข้อ :</label>
+     <select name="choice" id="choice">
+        <option value="none">none</option>
+        <option value="ไม่มีสินค้า">ไม่มีสินค้า</option>
+        <option value="ระบบขัดข้อง">ระบบขัดข้อง</option>
+        <option value="อื่นๆ">อื่นๆ</option>
+        </select>
+     <br>
+     <p>
+     <label for="messaeg">คำเรียกร้อง</label><br>
+     <textarea name="messaeg" id="messaeg" cols="35" rows="10" placeholder="ใส่คำร้องเรียน"></textarea>
+        
+     </p>
+     <input type="submit" value="ส่ง" class="no-style">
+     <input type="reset" class="no-style">
+     
+    </fieldset>
+   </form>
+
+ <hr>
+ <hr>
+ <h2>ติดต่อเรา</h2>
+ 
+
+<div class="contact-links">
+  <a href="tel:0988031903">
+    <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="phone"> โทร:0988031903
+  </a>
+  <a href="https://line.me/R/ti/p/@armmynotarmy" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/000000/line-me.png" alt="line"> ไลน์: @armmynotarmy
+  </a>
+  <a href="https://www.facebook.com/sirikamol.nasuchon" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="facebook"> เฟซบุ๊ก:army bunny shop
+  </a>
+</div>
+</body>
